@@ -1,0 +1,236 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* RGB CLR */
+    --tw-color-orange: 254, 165, 95; /* #fea55f */
+    --tw-color-purple: 77, 91, 205; /* #4d5bd5 */
+    --tw-color-green: 67, 217, 173; /* #43d9ad */
+    --tw-color-pink: 217, 67, 212; /* #d943d4 */
+    --tw-color-white: 256, 256, 256; /* #ffffff */
+    --tw-color-black: 0, 0, 0; /* #000000 */
+    /* HSL CLR */
+    --background: 0 0% 100%;
+    --foreground: 224 71.4% 0%;
+    --card: 0 0% 100%;
+    --card-foreground: 224 71.4% 4.1%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 224 71.4% 4.1%;
+    --primary: 262.1 83.3% 57.8%;
+    --primary-foreground: 210 20% 98%;
+    --secondary: 220 14.3% 95.9%;
+    --secondary-foreground: 220.9 39.3% 11%;
+    --muted: 220 14.3% 95.9%;
+    --muted-foreground: 220 8.9% 46.1%;
+    --accent: 220 14.3% 95.9%;
+    --accent-foreground: 220.9 39.3% 11%;
+    --destructive: 0 86% 97%; /* custom value */
+    --destructive-foreground: 0 74% 42%; /* custom value */
+    --border: 220 13% 91%;
+    --input: 220 13% 91%;
+    --ring: 262.1 83.3% 57.8%;
+    --radius: 0.5rem;
+  }
+}
+
+@layer base {
+  ::-webkit-scrollbar {
+    height: 2px;
+    border-radius: 999px;
+    width: 6px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background-color: transparent;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background-color: hsl(var(--border));
+    border-radius: 999px;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 0.5rem;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+  }
+}
+
+@layer base {
+  .cursor-newtab {
+    cursor: url("/images/new-tab.png") 10 10, pointer;
+  }
+
+  .cursor-rombus {
+    cursor: url("/core/cursor.svg") 10 10, pointer;
+  }
+  /* #region  /**=========== Typography =========== */
+  .g-text {
+    @apply font-secondary;
+    background: linear-gradient(
+      121.57deg,
+      hsl(var(--foreground)),
+      hsl(var(--foreground) / 0.66),
+      hsl(var(--foreground) / 0)
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .heading {
+    @apply text-center text-4xl font-black text-foreground md:text-5xl lg:text-7xl;
+  }
+  .heading-vw {
+    @apply text-[10vw] md:text-[5vw] lg:text-[3.8vw];
+  }
+  .heading-xl {
+    @apply text-6xl md:text-9xl font-semibold lg:text-[10rem];
+  }
+
+  .heading-project {
+    @apply text-3xl md:text-5xl font-medium text-foreground before:h-[3px] relative before:absolute before:left-0 before:-bottom-5 before:w-[60px] before:bg-red-500 before:rounded-md mb-10;
+  }
+
+  .h0 {
+    @apply font-primary text-3xl font-normal md:text-5xl;
+  }
+
+  h1,
+  .h1 {
+    @apply font-sans font-normal text-4xl text-foreground md:text-5xl lg:text-6xl;
+  }
+
+  h2,
+  .h2 {
+    @apply font-sans font-normal text-xl md:text-3xl;
+  }
+
+  h3,
+  .h3 {
+    @apply font-sans font-normal text-lg md:text-2xl;
+  }
+
+  h4,
+  .h4 {
+    @apply font-sans text-base font-normal md:text-lg;
+  }
+
+  body,
+  .p {
+    @apply font-sans text-sm md:text-base;
+  }
+  /* #endregion  /**======== Typography =========== */
+
+  .layout {
+    max-width: 80rem;
+    @apply mx-auto w-11/12;
+  }
+
+  .section {
+    @apply py-12 bg-background sm:py-16 lg:py-20 xl:py-24;
+  }
+
+  .bg-dark a.custom-link {
+    @apply border-gray-200 hover:border-gray-200/0;
+  }
+
+  .min-h-main {
+    @apply min-h-[calc(100vh-82px)];
+  }
+  .accent {
+    @apply dark:bg-gradient-to-tr dark:from-primary-300 dark:to-primary-400 dark:bg-clip-text dark:text-transparent;
+  }
+
+  .accent-highlight {
+    @apply bg-primary-300/50 dark:bg-gradient-to-tr dark:from-primary-300 dark:to-primary-400 dark:bg-clip-text dark:text-transparent;
+  }
+}
+
+@layer utilities {
+  .glow {
+    @apply animate-glow blur-lg;
+    background: linear-gradient(
+      90deg,
+      #44ff9a -0.55%,
+      #44b0ff 22.86%,
+      #8b44ff 48.36%,
+      #ff6644 73.33%,
+      #ebff70 99.34%
+    );
+    background-size: 500%;
+  }
+
+  .animated-underline {
+    background-image: linear-gradient(#33333300, #33333300),
+      linear-gradient(to right, hsl(var(--primary)), hsla(var(--primary)));
+    background-size: 100% 2px, 0 2px;
+    background-position: 100% 100%, 0 100%;
+    background-repeat: no-repeat;
+    transition: 0.3s ease;
+    transition-property: background-size, color, background-color, border-color;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .animated-underline {
+      transition: none;
+    }
+  }
+  .animated-underline:hover,
+  .animated-underline:focus-visible,
+  .project-card:hover .animated-underline,
+  .project-card:focus-visible .animated-underline {
+    background-size: 0 2px, 100% 2px;
+  }
+
+  /* #region  /**=========== Animate Shadow =========== */
+  .animate-shadow {
+    @apply after:absolute after:inset-0 after:z-[-1] after:opacity-0 after:transition-opacity hover:after:opacity-100;
+    @apply after:shadow-md dark:after:shadow-none;
+  }
+  /* #endregion  /**======== Animate Shadow =========== */
+}
+
+/* Tippy */
+.tippy-tooltip [x-circle] {
+  background-color: transparent !important;
+}
+
+.tippy-tooltip {
+  padding: 0 0.8rem;
+}
+
+/* YT Lite */
+.yt-lite::before {
+  content: none !important;
+}
+
+/* #region  /**=========== Twitter Embed =========== */
+.twitter-tweet.twitter-tweet-rendered {
+  margin: 0 auto !important;
+  border-radius: 12px;
+  overflow: hidden;
+}
+.tweet-custom-border {
+  @apply rounded-xl border-r border-gray-300 dark:border-gray-700;
+}
+@media (min-width: 595px) {
+  .tweet-custom-border {
+    @apply !border-0;
+  }
+}

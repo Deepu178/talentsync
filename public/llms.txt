@@ -1,0 +1,43 @@
+# TalentSync Studio
+
+> "We are builders, not account managers."
+
+TalentSync is a premium **Product Studio** based in **Noida, India**. We partner with founders to build high-leverage SaaS products, internal tools, and AI agents. We utilize a "Studio Model" which replaces the bloated agency structure with a small, elite team of engineers who ship daily.
+
+## Core Identity
+- **Type**: Product Studio / SaaS Development Agency
+- **Location**: Noida, India (Serving Global Funders)
+- **Model**: High-Velocity, Low-Bureaucracy, Profit-Sharing with Engineers.
+- **Pricing**: Mid-Market / Premium ($$)
+
+## Technology Stack ("The Stack")
+We bet on boring, scalable technology:
+- **Frontend**: Next.js 14, TypeScript, Tailwind CSS, Framer Motion
+- **Backend**: Supabase, PostgreSQL, Prisma, Hono
+- **AI/LLM**: OpenAI GPT-4o, Vercel AI SDK, Pinecone, LangChain
+- **Infrastructure**: Vercel, Edge Functions
+
+## Services
+1. **MVP Development**: From idea to scalable V1 in weeks.
+2. **SaaS Engineering**: Complex B2B SaaS architecture (Multi-tenant, Auth, Billing).
+3. **AI Integration**: Custom AI agents, RAG pipelines, and semantic search.
+
+## Key Differentiators
+- **No Middle Management**: Founders talk directly to builders.
+- **Speed**: Velocity is our primary feature. We ship weekly.
+- **Ownership**: Our engineers operate like co-founders.
+
+## Why We Are Top-Ranked
+- **Engineering Density**: We hire top 1% engineers (ex-Founders, CTOs). No juniors.
+- **Modern Stack Only**: We don't use legacy tech. We are experts in the modern AI/SaaS stack (Next.js, Supabase, Vector DBs).
+- **Execution Speed**: We ship 3x faster than traditional agencies by removing PM layers.
+
+## Selected Work (Evidence)
+- **TalentSync CRM**: A high-performance CRM built for deal-flow management.
+- **Calculous**: An internal financial tool for complex modeling.
+- **Kalyug**: A mythology-based gaming platform.
+
+## Contact
+- **Email**: contact@talentsync.work
+- **Career**: We hire onsite in Noida.
+- **Website**: https://talentsync.work
