@@ -52,9 +52,9 @@ const BookAndFaqSection = () => {
 
             <div className="flex flex-col gap-2 mt-8 pt-8 border-t border-border/40 w-full">
               <span className="text-xs uppercase tracking-wider font-mono text-muted-foreground">Alternatively</span>
-              <a href="mailto:contact@talentsync.work" className="flex items-center gap-3 text-sm font-medium hover:text-primary transition-colors">
+              <a href="mailto:team@talentsync.work" className="flex items-center gap-3 text-sm font-medium hover:text-primary transition-colors">
                 <Mail size={16} className="text-primary hidden sm:block" />
-                contact@talentsync.work
+                team@talentsync.work
               </a>
             </div>
           </div>

@@ -68,8 +68,8 @@ const Footer = () => {
               );
             })}
           </div>
-          <a href="mailto:contact@talentsync.work" className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors border-b border-transparent hover:border-primary pb-0.5">
-            contact@talentsync.work
+          <a href="mailto:team@talentsync.work" className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors border-b border-transparent hover:border-primary pb-0.5">
+            team@talentsync.work
           </a>
         </div>
 

@@ -104,7 +104,7 @@ const TermsPage = () => {
         <p>
           For any concerns or clarifications, please contact us at:
           <br />
-          📧 contact@talentsync.work
+          📧 team@talentsync.work
         </p>
         <p>
           🌐 www.talentsync.work

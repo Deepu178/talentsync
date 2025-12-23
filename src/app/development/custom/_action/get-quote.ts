@@ -23,8 +23,8 @@ export const getQuote = async (values: z.infer<typeof FormSchema>) => {
 
   try {
     await resend.emails.send({
-      from: "TalentSync Team <contact@talentsync.work>",
-      to: "contact@talentsync.work",
+      from: "TalentSync Team <team@talentsync.work>",
+      to: "team@talentsync.work",
       subject: "New Quote Request",
       html: `
           <h1>New Quote Request</h1>
@@ -46,7 +46,7 @@ export const getQuote = async (values: z.infer<typeof FormSchema>) => {
 
   try {
     await resend.emails.send({
-      from: "TalentSync Team <contact@talentsync.work>",
+      from: "TalentSync Team <team@talentsync.work>",
       to: email,
       subject: "Thank you for your quote request",
       html: `

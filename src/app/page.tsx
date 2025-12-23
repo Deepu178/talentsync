@@ -1,4 +1,4 @@
-import Contact from "@/components/pages/home/Contact";
+// import Contact from "@/components/pages/home/Contact";
 import BookAndFaqSection from "@/components/pages/home/FaqSection";
 import Hero from "@/components/pages/home/Hero";
 import OurWork from "@/components/pages/home/Portfolio";
@@ -26,7 +26,7 @@ export default function Home() {
       <Audience />
       <OurWork />
       <BookAndFaqSection />
-      <Contact />
+      {/* <Contact /> */}
     </main>
   );
 }

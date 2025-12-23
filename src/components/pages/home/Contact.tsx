@@ -102,13 +102,13 @@ const Contact = () => {
                 </motion.div>
 
                 <motion.a
-                  href="mailto:contact@talentsync.work"
+                  href="mailto:team@talentsync.work"
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
                   className="px-8 h-14 rounded-full text-base font-medium border border-border bg-background hover:bg-muted/50 transition-all flex items-center justify-center gap-2 hover:border-foreground/20 w-full md:w-auto min-w-[200px]"
                 >
                   <Mail size={18} />
-                  contact@talentsync.work
+                  team@talentsync.work
                 </motion.a>
               </div>
 

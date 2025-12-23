@@ -76,7 +76,7 @@ export default function CareersPage() {
               </div>
               <div className="flex-shrink-0">
                 <Link
-                  href={`mailto:contact@talentsync.work?subject=Application for ${role.q}`}
+                  href={`mailto:team@talentsync.work?subject=Application for ${role.q}`}
                   className="inline-flex items-center justify-center rounded-full bg-foreground px-6 py-3 text-sm font-medium text-background transition-colors hover:bg-foreground/90"
                 >
                   Apply Now
@@ -93,7 +93,7 @@ export default function CareersPage() {
             We are always open to meeting exceptional engineers and designers.
           </p>
           <Link
-            href="mailto:contact@talentsync.work?subject=General Application"
+            href="mailto:team@talentsync.work?subject=General Application"
             className="text-primary hover:underline underline-offset-4 font-mono text-sm"
           >
             Email us explicitly →
